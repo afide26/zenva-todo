@@ -10,8 +10,13 @@
   grid-row: 2/2;
 }
 
-/* .todo-item-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
+.site-header{
+  text-align:center;
+}
+
+.new-todo {
+  border-radius: 5px;
+  height: 50px;
+  padding: 5px;
+  width: 100%;
+}

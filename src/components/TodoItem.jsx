@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Table, Checkbox, Button } from 'semantic-ui-react';
 
 const styles = {
   display: "flex",
@@ -10,7 +10,15 @@ const styles = {
 }
 const TodoItem = ({ children }) => {
   return (
-    <div style={styles} className="todo-item-row">{children}</div>
+    <Table.Row>
+      <Table.Cell>
+        <Checkbox />
+      </Table.Cell>
+      <Table.Cell>
+        {children}
+        <Button color="red" icon="trash" floated="right" compact size="small" />
+      </Table.Cell>
+    </Table.Row>
   );
 }
 
