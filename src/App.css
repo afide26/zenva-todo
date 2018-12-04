@@ -8,10 +8,19 @@
 .todo-container {
   grid-column: 2/2;
   grid-row: 2/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.site-header{
-  text-align:center;
+.site-header {
+  text-align: center;
+}
+
+#counter {
+  width: 100%;
+  margin: 10px auto;
 }
 
 .new-todo {
